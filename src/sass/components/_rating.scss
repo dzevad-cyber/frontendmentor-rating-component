@@ -1,0 +1,26 @@
+.rating {
+  display: grid;
+  row-gap: 2.5rem;
+
+  max-width: 40rem;
+  background-color: var(--clr-neutral-dark-blue);
+  border-radius: 15px;
+  padding: 2.5rem;
+
+  &__title {
+    font-size: var(--fs-title);
+    color: var(--clr-neutral-white);
+    font-weight: var(--fw-400);
+  }
+
+  &__about {
+    font-size: var(--fs-paragraph);
+    color: var(--clr-neutral-light-grey);
+  }
+
+  &__count {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+  }
+}

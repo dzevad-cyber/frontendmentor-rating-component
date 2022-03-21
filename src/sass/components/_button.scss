@@ -1,0 +1,13 @@
+.btn {
+  all: unset;
+
+  cursor: pointer;
+  border-radius: 30px;
+  background-color: var(--clr-prim-orange);
+  padding: 1rem 0;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: var(--fw-700);
+  color: var(--clr-neutral-white);
+}
