@@ -10,12 +10,14 @@
   &__title {
     font-size: var(--fs-title);
     color: var(--clr-neutral-white);
-    font-weight: var(--fw-400);
+    font-weight: var(--fw-700);
   }
 
   &__about {
     font-size: var(--fs-paragraph);
     color: var(--clr-neutral-light-grey);
+    max-width: 33ch;
+    letter-spacing: 0.5px;
   }
 
   &__count {
