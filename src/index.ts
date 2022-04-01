@@ -6,11 +6,13 @@ const ratingSubmit = document.querySelector(
   '.rating__submit'
 )! as HTMLButtonElement;
 const successInfo = document.querySelector('.success__info')! as HTMLDivElement;
+const ratingForm = document.querySelector('.rating-form')! as HTMLFormElement;
 
 let activeCountIndex: number = -1;
 let activeElement: Element;
 const ratingCountArr: Element[] = Array.from(ratingCount.children);
 
+// attach event handler on each number button
 ratingCountArr.forEach((el) => {
   el.addEventListener('click', (e): void => {
     if (activeCountIndex >= 0 && activeCountIndex < ratingCountArr.length) {
@@ -24,7 +26,10 @@ ratingCountArr.forEach((el) => {
   });
 });
 
-ratingSubmit.addEventListener('click', (e): void => {
+// hangle submit event on form
+ratingForm.addEventListener('submit', (e): void => {
+  e.preventDefault();
+
   if (activeCountIndex !== -1) {
     // hide rating
     rating.classList.add('rating--hide');
